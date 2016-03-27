@@ -1,0 +1,98 @@
+/* universal styles */
+/*css reset chris coyier*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*clearfix paul irish*/
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*global styles*/
+.centerme {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+/*page styles*/
+body {
+  background: black;
+  background-image: url("../img/stairs.png");
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: 0px 100px;
+}
+
+.ball {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: white;
+  margin-top: 108px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  -webkit-animation-name: fall;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fall {
+  0% {
+    -webkit-transform: translate(-40px, 0px);
+  }
+  9% {
+    -webkit-transform: translate(255px, 0px);
+  }
+  18% {
+    -webkit-transform: translate(255px, 98px);
+  }
+  27% {
+    -webkit-transform: translate(350px, 98px);
+  }
+  36% {
+    -webkit-transform: translate(350px, 193px);
+  }
+  45% {
+    -webkit-transform: translate(445px, 193px);
+  }
+  54% {
+    -webkit-transform: translate(445px, 293px);
+  }
+  63% {
+    -webkit-transform: translate(540px, 293px);
+  }
+  72% {
+    -webkit-transform: translate(540px, 390px);
+  }
+  81% {
+    -webkit-transform: translate(635px, 390px);
+  }
+  90% {
+    -webkit-transform: translate(635px, 485px);
+  }
+  100% {
+    -webkit-transform: translate(1500px, 485px);
+  }
+}
