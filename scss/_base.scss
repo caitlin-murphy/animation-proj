@@ -55,76 +55,14 @@ body{
 	width: 30px; 
 	height: 30px; 
 	text-align: center;
-	-webkit-animation-name: fall;
-	-webkit-animation-duration: 10s;
-	-webkit-animation-timing-function: ease-in;
-	-webkit-animation-iteration-count: 1;
-	-moz-animation-name: fall;
-	-moz-animation-duration: 10s;
-	-moz-animation-timing-function: ease-in;
-	-moz-animation-iteration-count: 1;
-	animation-name: fall;
-	animation-duration: 10s;
-	animation-timing-function: ease-in;
-	animation-iteration-count: 1;
+	@include animation(fall 10s ease-in 1);
 	}
 
 .bunny{
-	-webkit-animation-name: magnet;
-	-webkit-animation-duration: 10s;
-	-webkit-animation-timing-function: ease-in;
-	-webkit-animation-iteration-count: 1;
-	-moz-animation-name: magnet;
-	-moz-animation-duration: 10s;
-	-moz-animation-timing-function: ease-in;
-	-moz-animation-iteration-count: 1;
-	animation-name: magnet;
-	animation-duration: 10s;
-	animation-timing-function: ease-in;
-	animation-iteration-count: 1;
+	@include animation(magnet 10s ease-in 1);
 }
 
-
-@-webkit-keyframes fall{
-	0%{
-		-webkit-transform: translate(-40px, 0px);
-	}
-	9%{
-		-webkit-transform: translate(255px, 0px);
-	}
-	18%{
- 		-webkit-transform: translate(255px, 98px);
- 	}
- 	27%{
- 		-webkit-transform: translate(350px, 98px);
- 	}
- 	36%{
-		-webkit-transform: translate(350px, 193px);
-	}
-	45%{
-		-webkit-transform: translate(445px, 193px);
-	}
-	54%{
- 		-webkit-transform: translate(445px, 293px);
- 	}
- 	63%{
- 		-webkit-transform: translate(540px, 293px);
- 	}
- 	72%{
-		-webkit-transform: translate(540px, 390px);
-	}
-	81%{
- 		-webkit-transform: translate(635px, 390px);
- 	}
- 	90%{
- 		-webkit-transform: translate(635px, 485px);
- 	}
- 	100%{
- 		-webkit-transform: translate(1500px, 485px);
- 	}
- }
-
- @keyframes fall{
+ @include keyframes(fall){
 	0%{
 		transform: translate(-40px, 0px);
 	}
@@ -163,127 +101,7 @@ body{
  	}
  }
 
- @-moz-keyframes fall{
-	0%{
-		-moz-transform: translate(-40px, 0px);
-	}
-	9%{
-		-moz-transform: translate(255px, 0px);
-	}
-	18%{
- 		-moz-transform: translate(255px, 98px);
- 	}
- 	27%{
- 		-moz-transform: translate(350px, 98px);
- 	}
- 	36%{
-		-moz-transform: translate(350px, 193px);
-	}
-	45%{
-		-moz-transform: translate(445px, 193px);
-	}
-	54%{
- 		-moz-transform: translate(445px, 293px);
- 	}
- 	63%{
- 		-moz-transform: translate(540px, 293px);
- 	}
- 	72%{
-		-moz-transform: translate(540px, 390px);
-	}
-	81%{
- 		-moz-transform: translate(635px, 390px);
- 	}
- 	90%{
- 		-moz-transform: translate(635px, 485px);
- 	}
- 	100%{
- 		-moz-transform: translate(1500px, 485px);
- 	}
- }
-
-
- @-webkit-keyframes magnet{
-	0%{
-		-webkit-transform: translate(-120px, 0px);
-	}
-	9%{
-		-webkit-transform: translate(205px, 0px);
-
-	}
-	18%{
- 		-webkit-transform: translate(205px, 98px);
-  	}
- 	27%{
- 		-webkit-transform: translate(310px, 98px);
- 	}
- 	36%{
-		-webkit-transform: translate(310px, 193px);
-	}
-	45%{
-		-webkit-transform: translate(395px, 193px);
-	}
-	54%{
- 		-webkit-transform: translate(395px, 293px);
- 	}
- 	63%{
- 		-webkit-transform: translate(490px, 293px);
- 	}
- 	72%{
-		-webkit-transform: translate(490px, 390px);
-	}
-	81%{
- 		-webkit-transform: translate(590px, 390px);
- 	}
- 	90%{
- 		-webkit-transform: translate(590px, 485px);
- 	}
- 	100%{
- 		-webkit-transform: translate(1450px, 485px);
- 	}
- }
-
-@-moz-keyframes magnet{
-	0%{
-		-moz-transform: translate(-120px, 0px);
-	}
-	9%{
-		-moz-transform: translate(205px, 0px);
-
-	}
-	18%{
- 		-moz-transform: translate(205px, 98px);
-  	}
- 	27%{
- 		-moz-transform: translate(310px, 98px);
- 	}
- 	36%{
-		-moz-transform: translate(310px, 193px);
-	}
-	45%{
-		-moz-transform: translate(395px, 193px);
-	}
-	54%{
- 		-moz-transform: translate(395px, 293px);
- 	}
- 	63%{
- 		-moz-transform: translate(490px, 293px);
- 	}
- 	72%{
-		-moz-transform: translate(490px, 390px);
-	}
-	81%{
- 		-moz-transform: translate(590px, 390px);
- 	}
- 	90%{
- 		-moz-transform: translate(590px, 485px);
- 	}
- 	100%{
- 		-moz-transform: translate(1450px, 485px);
- 	}
- }
-
- @keyframes magnet{
+ @include keyframes(magnet){
 	0%{
 		 transform: translate(-120px, 0px);
 	}
